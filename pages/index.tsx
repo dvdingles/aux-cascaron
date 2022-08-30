@@ -17,6 +17,19 @@ const estilos = {
 
 
 const Home: NextPage = () => {
+
+  // let escala = 1
+  // let x = window.matchMedia("(max-width:444px)")
+
+  // function quer(x){
+  //   if(x.matches){
+  //     escala = .5
+  //   }else{
+  //     escala = 1
+  //   }
+  // }
+  // x.addEventListener(quer)
+
   return (
     <div className={styles.canvas} style={{backgroundColor: '#f5f5f5', width:'90%'}}>
       {/* <div>
@@ -25,8 +38,11 @@ const Home: NextPage = () => {
       <div className={styles.container}>
         <h1 className={styles.titulo} style={estilos} >Auxiliar Manipuladora</h1>
       </div>
+      <div className={styles.movil}>
+        <h1 className={styles.telefono} style={estilos} >968 555 666</h1>
+      </div>
       <Canvas
-        style={{ width: '90%', margin:'auto', height:'50vh'}}
+        style={{ width: '100%', margin:'auto', height:'88vh', border:'2px solid black'}}
         camera={{view: 
           {
             enabled: true,
@@ -46,13 +62,10 @@ const Home: NextPage = () => {
         {/* <Environment far={10} files="/nieve.hdr" ground={{ height: 10, scale: 1 }} /> */}
           
             <Dav 
-              // style={{backgroundColor:'green'}}
-              // style={{ width:'100%', height:'60vh'}}
-              // style={{ scale:'.5' }}
+              // className={styles.dav}
               scale={1}
               position={[0,0.15,0]}
               rotation={[Math.PI / 2, 0, 0]}
-              // rotation={[0,1.5,0]}
             />
         
         </Suspense>
