@@ -4,11 +4,13 @@ import type { NextPage } from 'next'
 import { Suspense } from 'react'
 // import { David } from '../components/David'
 import { Dav } from '../components/Dav'
+import styles from './Index.module.css'
 
 const estilos = {
 
   color: 'red',
-  marginTop:'55px'
+  // margin:'11px 11px',
+  // position: 'absolute'
 
 }
 
@@ -20,8 +22,8 @@ const Home: NextPage = () => {
       {/* <div>
         <h1 style={{ position:'absolute'}}>Auxiliar Manipuladora</h1>
       </div> */}
-      <div>
-        <h1 style={estilos}>Auxiliar Manipuladora</h1>
+      <div className={styles.container}>
+        <h1 className={styles.titulo} style={estilos}>Auxiliar Manipuladora</h1>
       </div>
       <Canvas
         style={{ width: '90%', margin:'auto', height:'50vh'}}
@@ -44,7 +46,7 @@ const Home: NextPage = () => {
         {/* <Environment far={10} files="/nieve.hdr" ground={{ height: 10, scale: 1 }} /> */}
           
             <Dav 
-              style={{ width:'100%', height:'100vh'}}
+              style={{backgroundColor:'green'}}// style={{ width:'100%', height:'60vh'}}
               position={[0,0.15,0]}
               // rotation={[0,1.5,0]}
             />
