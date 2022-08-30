@@ -8,7 +8,7 @@ import styles from './Index.module.css'
 
 const estilos = {
 
-  color: 'red',
+  color: '#dfac12',
   // margin:'11px 11px',
   // position: 'absolute'
 
@@ -18,12 +18,12 @@ const estilos = {
 
 const Home: NextPage = () => {
   return (
-    <div style={{backgroundColor: '#f5f5f5', width:'90%'}}>
+    <div className={styles.canvas} style={{backgroundColor: '#f5f5f5', width:'90%'}}>
       {/* <div>
         <h1 style={{ position:'absolute'}}>Auxiliar Manipuladora</h1>
       </div> */}
       <div className={styles.container}>
-        <h1 className={styles.titulo} style={estilos}>Auxiliar Manipuladora</h1>
+        <h1 className={styles.titulo} style={estilos} >Auxiliar Manipuladora</h1>
       </div>
       <Canvas
         style={{ width: '90%', margin:'auto', height:'50vh'}}

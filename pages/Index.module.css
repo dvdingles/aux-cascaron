@@ -1,6 +1,12 @@
+/* :root{
+    --auxiliar1: #dfac12;
+    --auxiliar2 : #00814A;
+  } */
+  
+
 @font-face {
     font-family: 'ITC Eras Demi';
-    src: url('../public/Tipos/ITC Eras Demi.ttf') format('truetype');
+    src: url('../public/ITC Eras Demi.ttf') format('truetype');
   }
   
 
@@ -9,18 +15,26 @@
 
 
 .container {
-    background-color: orange;
+    background-color: #00814A;
 }
 
 
 @media only screen and (max-width: 444px){
     .container{
-        background-color: silver;
+        background-color: white;
     }
 }
 
 .titulo {
-    margin: 22px 22px
-    
+    margin: 11px 11px;
+    font-family: 'ITC Eras Demi', sans-serif;
+    color:'#dfac12';
+    font-size: 1.5rem;
+
+
+}
+
+.canvas {
+    margin: auto;
 }
 

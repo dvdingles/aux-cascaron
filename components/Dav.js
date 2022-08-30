@@ -9,7 +9,7 @@ export function Dav(props) {
   const { nodes, materials } = useGLTF("/aaa.gltf");
   return (
     <group {...props} dispose={null}>
-      <group  >
+      <group >
         <mesh
           castShadow
           receiveShadow
