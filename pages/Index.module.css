@@ -1,3 +1,13 @@
+@font-face {
+    font-family: 'ITC Eras Demi';
+    src: url('../public/Tipos/ITC Eras Demi.ttf') format('truetype');
+  }
+  
+
+
+
+
+
 .container {
     background-color: orange;
 }
@@ -11,4 +21,6 @@
 
 .titulo {
     margin: 22px 22px
+    
 }
+

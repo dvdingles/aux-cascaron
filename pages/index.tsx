@@ -18,7 +18,7 @@ const estilos = {
 
 const Home: NextPage = () => {
   return (
-    <div style={{backgroundColor: '#f5f5f5'}}>
+    <div style={{backgroundColor: '#f5f5f5', width:'90%'}}>
       {/* <div>
         <h1 style={{ position:'absolute'}}>Auxiliar Manipuladora</h1>
       </div> */}
@@ -46,8 +46,12 @@ const Home: NextPage = () => {
         {/* <Environment far={10} files="/nieve.hdr" ground={{ height: 10, scale: 1 }} /> */}
           
             <Dav 
-              style={{backgroundColor:'green'}}// style={{ width:'100%', height:'60vh'}}
+              // style={{backgroundColor:'green'}}
+              // style={{ width:'100%', height:'60vh'}}
+              // style={{ scale:'.5' }}
+              scale={1}
               position={[0,0.15,0]}
+              rotation={[Math.PI / 2, 0, 0]}
               // rotation={[0,1.5,0]}
             />
         
