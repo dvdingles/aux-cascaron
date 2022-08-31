@@ -39,7 +39,7 @@ const Home: NextPage = () => {
         <h1 className={styles.titulo} style={estilos} >Auxiliar Manipuladora</h1>
       </div>
       <div className={styles.movil}>
-        <h1 className={styles.telefono} style={estilos} >968 555 666</h1>
+        <h1 className={styles.telefono} style={estilos} >968 693 575</h1>
       </div>
       <Canvas
         style={{ width: '100%', margin:'auto', height:'88vh', border:'2px solid black'}}
